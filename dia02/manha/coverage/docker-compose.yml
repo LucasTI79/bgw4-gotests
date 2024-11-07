@@ -1,0 +1,11 @@
+services:
+  database:
+    image: mysql:9.1.0
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: meli
+      MYSQL_USER: meli
+      MYSQL_DATABASE: bgw4
